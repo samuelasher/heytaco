@@ -6,13 +6,13 @@ include: "*.view"
 # include all the dashboards
 include: "*.dashboard"
 
-datagroup: git_github_com_samuelasher_heytaco_git_default_datagroup {
+datagroup: default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
 
-persist_with: git_github_com_samuelasher_heytaco_git_default_datagroup
+persist_with: default_datagroup
 
-explore: tacos {}
-
-# - explore: games
+explore: tacos {
+  label: "Tacos 🌮"
+}
