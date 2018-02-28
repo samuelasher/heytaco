@@ -29,7 +29,8 @@ view: tacos {
       week,
       month,
       quarter,
-      year
+      year,
+      day_of_week
     ]
     sql: ${TABLE}.given_at ;;
   }
