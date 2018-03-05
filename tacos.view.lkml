@@ -22,6 +22,7 @@ view: tacos {
   dimension_group: given {
     type: time
     label: "🌮 Event"
+    datatype: epoch
     sql: UNIX_TIMESTAMP(STR_TO_DATE(${TABLE}.given_at, '%m-%d-%Y %h:%i:%s %p'));;
   }
 
