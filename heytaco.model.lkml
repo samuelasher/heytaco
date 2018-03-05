@@ -1,4 +1,4 @@
-connection: "local-psql"
+connection: "sam-mysql"
 
 # include all the views
 include: "*.view"
