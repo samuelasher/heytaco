@@ -1,5 +1,5 @@
 view: tacos {
-  sql_table_name: public.tacos ;;
+  sql_table_name: lookvr_vg.tacos ;;
   label: "🌮 Transactions"
   dimension: channel {
     label: "Slack Channel"
@@ -22,17 +22,7 @@ view: tacos {
   dimension_group: given {
     type: time
     label: "🌮 Event"
-    timeframes: [
-      raw,
-      time,
-      date,
-      week,
-      month,
-      quarter,
-      year,
-      day_of_week
-    ]
-    sql: ${TABLE}.given_at ;;
+    sql: UNIX_TIMESTAMP(STR_TO_DATE(${TABLE}.given_at, '%m-%d-%Y %h:%i:%s %p'));;
   }
 
   dimension: message {
@@ -56,7 +46,7 @@ view: tacos {
   dimension: tacos {
     type: number
     label: "Number of 🌮"
-    sql: ${TABLE}.tacos ;;
+    sql:  CAST( ${TABLE}.tacos AS UNSIGNED) ;;
   }
 
   dimension: tags {
