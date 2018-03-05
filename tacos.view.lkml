@@ -23,6 +23,7 @@ view: tacos {
     type: time
     label: "🌮 Event"
     datatype: epoch
+    convert_tz: no
     sql: UNIX_TIMESTAMP(STR_TO_DATE(${TABLE}.given_at, '%m-%d-%Y %h:%i:%s %p'));;
   }
 
