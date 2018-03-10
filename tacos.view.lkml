@@ -22,9 +22,8 @@ view: tacos {
   dimension_group: given {
     type: time
     label: "🌮 Event"
-    datatype: epoch
     convert_tz: no
-    sql: UNIX_TIMESTAMP(STR_TO_DATE(${TABLE}.given_at, '%m-%d-%Y %h:%i:%s %p'));;
+    sql: STR_TO_DATE(${TABLE}.given_at, '%m-%d-%Y %h:%i:%s %p');;
   }
 
   dimension: message {
@@ -91,6 +90,10 @@ view: tacos {
     label: "Count Slack Channels"
     drill_fields: [channel]
     sql: ${channel} ;;
+  }
+  measure: first_taco {
+    type: date
+    sql: MIN(${given_raw}) ;;
   }
 
   set: event_drill {
