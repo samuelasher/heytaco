@@ -19,6 +19,17 @@ view: tacos {
     sql: ${TABLE}.gid ;;
   }
 
+  parameter: pre_day_of_week {
+    allowed_value: {
+      label: "Friday"
+      value: "Friday"
+    }
+    allowed_value: {
+      label: "Saturday"
+      value: "Friday,Saturday"
+    }
+  }
+
   dimension_group: given {
     type: time
     label: "🌮 Event"
