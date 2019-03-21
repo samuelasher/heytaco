@@ -13,7 +13,13 @@ persist_with: default_datagroup
 
 explore: tacos {
   label: "Tacos 🌮"
+  hidden: yes
  # sql_always_where: ${given_day_of_week} IN ({% parameter tacos.pre_day_of_week %}) ;;
 }
 
-explore: emoji_test {}
+explore: emoji_test {
+  hidden: yes
+}
+explore: people {
+  hidden: yes
+}
