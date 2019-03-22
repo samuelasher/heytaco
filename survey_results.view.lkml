@@ -66,6 +66,24 @@ SELECT '3/19/2019 4:49:19','jon.allen@looker.com','Santa Cruz','7-12 months',4,3
   }
   dimension: tenure {
     group_label: "User Info"
+    case: {
+      when: {
+        sql: ${TABLE}.tenure = 'Less than 12 weeks' ;;
+        label: "Less than 12 Weeks"
+      }
+      when: {
+        sql: ${TABLE}.tenure = '3-6 Months' ;;
+        label: "3-6 Months"
+      }
+      when: {
+        sql: ${TABLE}.tenure = '7-12 Months' ;;
+        label: "7-12 Months"
+      }
+      when: {
+        sql: ${TABLE}.tenure = 'More than a year' ;;
+        label: "More than a year"
+      }
+    }
   }
   dimension: sme {
     group_label: "Votes"
