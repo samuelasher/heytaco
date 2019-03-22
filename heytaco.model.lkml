@@ -23,3 +23,6 @@ explore: emoji_test {
 explore: people {
   hidden: yes
 }
+explore: survey_results {
+  hidden: yes
+}
