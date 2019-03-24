@@ -49,8 +49,29 @@ SELECT '3/16/2019 0:13:19','david.chiaramonte@looker.com','Santa Cruz','3-6 mont
 UNION ALL
 SELECT '3/16/2019 12:02:15','milli.koch@looker.com','Santa Cruz','7-12 months',5,3,4,3,'I''m in favor of making SMEs/general technical topics more approachable, especially in regards to catering towards a variety of learning styles.',NULL,NULL
 UNION ALL
-SELECT '3/19/2019 4:49:19','jon.allen@looker.com','Santa Cruz','7-12 months',4,3,2,3,'Going through the SME Curriculum is weird, all of the different subjects have a different process for completing. Also, there are a ton of copies of documents within the curricula google drive folders, and it''s a bit chaotic t know which documents are relevant and which are not. So I think that is one area where we could clean up the different processes and standardize SME- curriculum a bit.','Stickers (or some other small inexpensive reward) would be cool for meeting education/training goals, both for new people and mid/sr chatters.','Keep up the excellent work!';
+SELECT '3/19/2019 4:49:19','jon.allen@looker.com','Santa Cruz','7-12 months',4,3,2,3,'Going through the SME Curriculum is weird, all of the different subjects have a different process for completing. Also, there are a ton of copies of documents within the curricula google drive folders, and it''s a bit chaotic t know which documents are relevant and which are not. So I think that is one area where we could clean up the different processes and standardize SME- curriculum a bit.','Stickers (or some other small inexpensive reward) would be cool for meeting education/training goals, both for new people and mid/sr chatters.','Keep up the excellent work!'
+UNION ALL
+SELECT '3/22/2019 16:02:45','ryan.dunlavy@looker.com','Santa Cruz','More than a year',3,4,3,5,NULL,NULL,NULL
+UNION ALL
+SELECT '3/22/2019 23:42:45','takuya.suzuki@looker.com','Tokyo','3-6 months',4,3,3,4,'I''m still learning about Looker feature and I''m feeling difficulty with customer communication (tone etc) so I voted as "4" for the projects which might be associated.','N/A','• Skilljar course is a great stuff to input the basic knowledge for me. Although we have SME curriclula , I think it is nice to have more basic stuff about SSO embed since there are few articles now.
 
+• I think chat is the best opportunity to learn so the current chat shadowing/training is awesome for new hires. Also, I think the chat volume which I took during the ramp was just right (not too much, not too less) so I had a time to study and review after the chat.
+
+• When I was in Santa Cruz, I joined some live sessions regarding Ops etc. I appreciate if there is a video which they can share with Tokyo team in the future so that we can learn as well.'
+UNION ALL
+SELECT '3/22/2019 23:57:04','Jiro.wiseman@looker.com','Santa Cruz','More than a year',4,3,5,5,'Training, though not a guarantee that everything is known, gives us a chance to create a higher and more consistent skill set across our team. These can be used to set trackable goals and measures.
+
+Applying this philosophy to support technique and non-sme technical topics would be fantastic!','I think you have enough on your plate','Just need to chat more as we transition to the new structure'
+UNION ALL
+SELECT '3/23/2019 1:16:20','jeffrey.martinez@looker.com','Santa Cruz','More than a year',2,2,4,4,NULL,NULL,NULL
+UNION ALL
+SELECT '3/23/2019 4:35:37',NULL,'Santa Cruz','More than a year',5,5,2,3,'Guru speed and findability could use a big improvement.',NULL,'Sam''s awesome :)'
+UNION ALL
+SELECT '3/23/2019 5:10:42','talal.naboulsi@looker.com','Santa Cruz','7-12 months',4,2,2,2,NULL,NULL,NULL
+UNION ALL
+SELECT '3/23/2019 9:28:33','will.adams@looker.com','Santa Cruz','More than a year',4,4,3,4,NULL,NULL,NULL
+UNION ALL
+SELECT '3/24/2019 6:35:19','deepika.raghavan@looker.com','Santa Cruz','3-6 months',3,4,5,5,NULL,NULL,NULL
     ;;
   }
 
