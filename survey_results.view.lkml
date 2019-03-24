@@ -56,7 +56,7 @@ SELECT '3/19/2019 4:49:19','jon.allen@looker.com','Santa Cruz','7-12 months',4,3
 
   dimension_group: created {
     type: time
-    sql: ${TABLE}.timestamp ;;
+    sql: STR_TO_DATE(${TABLE}.timestamp, '%m/%d/%Y %k:%i:%s') ;;
   }
   dimension: email {
     group_label: "User Info"
