@@ -127,25 +127,30 @@ SELECT '3/24/2019 6:35:19','deepika.raghavan@looker.com','Santa Cruz','3-6 month
 
   measure: sme_total {
     group_label: "Votes"
-    type: sum
+    label: "SME Average"
+    type: average
     sql: ${sme};;
 
   }
   measure: guru_find_total {
     group_label: "Votes"
-    type: sum
+    label: "Guru Find Average"
+    type: average
     sql: ${guru_find};;
 
   }
   measure: tech_content_total {
     group_label: "Votes"
-    type: sum
+    label: "Tech Content Average"
+    type: average
     sql: ${tech_content};;
 
   }
   measure: customer_interaction_total {
     group_label: "Votes"
-    type: sum
+    label: "Customer Interaction Average"
+
+    type: average
     sql: ${customer_interactions};;
 
   }
